@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+    <div class="topbar"></div>
+
+    <header class="header">
+      <div class="brand-row">
+        <div class="brand-bar"></div>
+      </div>
+      <h1 class="page-title">Cadastro de Usuário </h1>
+    </header>
+
+    <main>
+      <form id="formCadastro" class="card" novalidate>
+        <fieldset class="section">
+          <legend>Dados Cadastrais</legend>
+
+          <div class="grid columns-3">
+            <label class="full">Nome do Solitante:
+              <input type="text" name="nome" required>
+            </label>
+
+             <label>Tipo Pessoa:
+              <select name="Tipo Pessoa">
+                <option value="">Selecione</option>
+                <option value="Física">Física</option>
+                <option value="Jurídica">Jurídica</option>
+              </select>
+
+            <label>CPF:
+              <input type="text" name="cpf">
+            </label>
+
+            <label>RG:
+              <input type="text" name="rg">
+            </label>
+
+            <label>Órgão Expedidor:
+              <input type="text" name="orgao">
+            </label>
+
+            <label>Telefone Fixo:
+              <input type="tel" name="fone_fixo">
+            </label>
+
+            <label>Telefone Celular:
+              <input type="tel" name="fone_cel">
+            </label>
+
+            <label class="full">Endereço Residencial:
+              <input type="text" name="endereco">
+            </label>
+
+            <label>Complemento:
+              <input type="text" name="complemento">
+            </label>
+
+            <label>Bairro:
+              <input type="text" name="bairro">
+            </label>
+
+            <label>Estado:
+              <select name="estado">
+                <option value="">Selecione</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="RJ">RJ</option>
+              </select>
+            </label>
+
+            <label>Cidade:
+              <select name="cidade">
+                <option value="">Selecione</option>
+                 <option value="SC">Rio do Sul</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+              </select>
+            </label>
+
+            <label>CEP:
+              <input type="text" name="cep">
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="section">
+          <legend>Dados de Autenticação</legend>
+
+          <div class="grid columns-2">
+            <label>E-mail:
+              <input type="email" name="email" required>
+            </label>
+
+            <label>Senha (mínimo 8 caracteres com letras e números):
+              <input type="password" name="senha" minlength="8" required>
+            </label>
+
+            <label>Confirmar Senha:
+              <input type="password" name="senha2" required>
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="actions">
+          <button type="submit" class="btn primary">Enviar</button>
+          <button type="button" class="btn secondary" onclick="history.back()">Voltar</button>
+        </div>
+
+        <div id="msg" aria-live="polite" class="msg"></div>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <small>UNIDAVI</small>
+    </footer>
+  </div>
+</body>
+</html>
