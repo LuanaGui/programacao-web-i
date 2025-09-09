@@ -5,10 +5,10 @@ function linha() {
 
   let novaLinha = tabela.insertRow(qtdLinhas);
 
-  // primeira célula
+  
   novaLinha.insertCell(0).innerHTML = "Médias";
 
-  // calcular médias de cada coluna
+  
   for (let c = 1; c < qtdColunas; c++) {
     let soma = 0;
     for (let l = 1; l < qtdLinhas; l++) {
@@ -24,10 +24,10 @@ function coluna() {
   let qtdLinhas = tabela.rows.length;
   let qtdColunas = tabela.rows[0].cells.length;
 
-  // cabeçalho
+  
   tabela.rows[0].insertCell(qtdColunas).innerHTML = "Média";
 
-  // calcular médias por aluno
+  
   for (let l = 1; l < qtdLinhas; l++) {
     let soma = 0;
     for (let c = 1; c < qtdColunas; c++) {
