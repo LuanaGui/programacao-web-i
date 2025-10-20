@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEIRA DE FRUTAS E VERDURAS</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <h2>FEIRA DE FRUTAS E VERDURAS</h2>
+    <form method="post" action="produto.php">
+        <p><strong>Informe o valor por KG e a QUANTIDADE COMPRADA:</strong></p>
+
+    <div class="form-linha">
+        <label>MAÇÃ (R$/KG):</label>
+        <input type="number" step="0.01" name="preco_maca">
+        <label>Quantidade (KG):</label>
+        <input type="number" step="0.01" name="quantidade_maca">
+    </div>
+
+    <div class="form-linha">
+        <label>MELANCIA (R$/KG):</label>
+        <input type="number" step="0.01" name="preco_melancia">
+        <label>Quantidade (KG):</label>
+        <input type="number" step="0.01" name="quantidade_melancia">
+    </div>
+
+    <div class="form-linha">
+        <label>LARANJA (R$/KG):</label>
+        <input type="number" step="0.01" name="preco_laranja">
+        <label>Quantidade (KG):</label>
+        <input type="number" step="0.01" name="quantidade_laranja">
+    </div>
+
+    <div class="form-linha">
+        <label>REPOLHO (R$/KG):</label>
+        <input type="number" step="0.01" name="preco_repolho">
+        <label>Quantidade (KG):</label>
+        <input type="number" step="0.01" name="quantidade_repolho">
+    </div>
+
+    <div class="form-linha">
+        <label>CENOURA (R$/KG):</label>
+        <input type="number" step="0.01" name="preco_cenoura">
+        <label>Quantidade (KG):</label>
+        <input type="number" step="0.01" name="quantidade_cenoura">
+    </div>
+
+    <div class="form-linha">
+        <label>BATATA (R$/KG):</label>
+        <input type="number" step="0.01" name="preco_batata">
+        <label>Quantidade (KG):</label>
+        <input type="number" step="0.01" name="quantidade_batata">
+    </div>
+    
+        <input type="submit" value="CALCULAR TOTAL" class="botao">
+    </form>
+</body>
+</html>
