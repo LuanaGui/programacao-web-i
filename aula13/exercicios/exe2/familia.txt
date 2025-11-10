@@ -1,0 +1,12 @@
+Nome completo: João Guilherme
+Idade: 50 anos
+CPF/CNPJ: 12345678900
+--------------------------
+Nome completo: Maria Guilherme
+Idade: 47 anos
+CPF/CNPJ: 98765432100
+--------------------------
+Nome completo: Ana Guilherme
+Idade: 17 anos
+CPF/CNPJ: 11223344556
+--------------------------

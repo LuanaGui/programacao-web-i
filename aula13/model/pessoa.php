@@ -1,28 +1,26 @@
 <?php
-// Arquivo: model/Pessoa.php
+
+namespace model;
 
 class Pessoa {
-    // Atributos
-    private $nome;
-    private $sobrenome;
-    private $idade;
+    private string $nome;
+    private string $sobrenome;
+    private string $dataNascimento;
+    private string $cpfCnpj;
+    private int $tipo;
+    private $telefone; 
+    private $endereco; 
 
-    // Construtor
-    public function __construct($nome, $sobrenome, $idade) {
-        // (sem implementação por enquanto)
+    public function getNomeCompleto(): string {
+        
     }
 
-    // Métodos
-    public function getNomeCompleto() {
-        // (sem implementação)
+    public function getIdade(): int {
+        
     }
 
-    public function getIdade() {
-        // (sem implementação)
-    }
-
-    public function setIdade($idade) {
-        // (sem implementação)
+    public function inicializaClasse(): void {
+        
     }
 }
 ?>
