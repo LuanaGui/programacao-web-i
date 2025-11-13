@@ -1,81 +1,108 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #fafafa;
-    color: #333;
-    margin: 0;
-    padding: 0;
+/* reset */
+*{box-sizing:border-box;margin:0;padding:0;font-family: "Poppins", sans-serif}
+
+/* página inteira centralizada (tablet-friendly) */
+html,body{height:100%}
+body{
+  background:#fafafa;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
 }
 
-.container {
-    width: 80%;
-    max-width: 800px;
-    margin: 40px auto;
-    background: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+/* container central (limpo e compatível com tablet) */
+.container{
+  width:100%;
+  max-width:720px; /* tablet-friendly */
+  background:#fff;
+  padding:28px;
+  border-radius:14px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.07);
+  text-align:center;
 }
 
-h1, h2 {
-    text-align: center;
-    color: #a22;
+/* títulos */
+.titulo{color:#d32f2f;font-size:1.9rem;margin-bottom:6px}
+.descricao{color:#555;margin-bottom:18px}
+
+/* pergunta (cada bloco) */
+.pergunta{display:none}
+.pergunta.ativa{display:block; animation:fadeIn .25s ease}
+.texto-pergunta{display:block;font-size:1.15rem;font-weight:600;margin-bottom:14px;padding:0 8px}
+
+/* escala: linha de bolinhas coloridas */
+.escala{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:8px;
+  margin-top:6px;
 }
 
-.pergunta {
-    margin-bottom: 25px;
+/* escondemos o input nativo */
+.escala input[type="radio"]{display:none}
+
+/* label visual da escala (usamos data-value para colorir) */
+.escala label{
+  width:44px;
+  height:44px;
+  border-radius:6px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
+  color:#fff;
+  cursor:pointer;
+  transition:transform .12s ease, box-shadow .12s ease;
+  user-select:none;
 }
 
-.pergunta label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 10px;
+/* cores exatas por valor (do vermelho ao verde) */
+.escala label[data-value="0"]  { background:#d73027; }
+.escala label[data-value="1"]  { background:#e24626; }
+.escala label[data-value="2"]  { background:#f46d43; }
+.escala label[data-value="3"]  { background:#f68d3c; }
+.escala label[data-value="4"]  { background:#fdae61; color:#222;}
+.escala label[data-value="5"]  { background:#fee08b; color:#222;}
+.escala label[data-value="6"]  { background:#d9ef8b; color:#222;}
+.escala label[data-value="7"]  { background:#a6d96a; color:#222;}
+.escala label[data-value="8"]  { background:#66bd63; }
+.escala label[data-value="9"]  { background:#1a9850; }
+.escala label[data-value="10"] { background:#006837; }
+
+/* efeito quando selecionado: usamos selector input:checked + label */
+.escala input[type="radio"]:checked + label{
+  transform:scale(1.08);
+  box-shadow:0 6px 18px rgba(0,0,0,0.12);
+  outline:3px solid rgba(0,0,0,0.06);
 }
 
-.escala input[type="radio"] {
-    margin: 0 3px;
-}
+/* hover leve */
+.escala label:hover{filter:brightness(1.03); transform:translateY(-2px) scale(1.03)}
 
-textarea {
-    width: 100%;
-    height: 80px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 8px;
-    resize: none;
+/* textarea e botão */
+textarea{
+  width:100%;height:110px;padding:10px;border-radius:10px;border:1px solid #dcdcdc;margin-top:12px;font-size:1rem;resize:none
 }
+textarea:focus{outline:none;border-color:#d32f2f}
 
-button {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 30px;
-    background-color: #a22;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.btn-enviar{
+  margin-top:14px;padding:12px 18px;border-radius:10px;border:0;background:#d32f2f;color:#fff;font-weight:700;cursor:pointer;width:100%;
 }
+.btn-enviar:hover{background:#b71c1c}
 
-button:hover {
-    background-color: #900;
+/* anonimato */
+.anonimo{color:#777;margin-top:16px;font-size:0.95rem}
+
+/* animação */
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* responsividade para tablets e celulares */
+@media (max-width:900px){
+  .container{padding:20px}
+  .escala label{width:40px;height:40px;font-size:0.95rem}
 }
-
-.anonimo {
-    text-align: center;
-    font-size: 0.9em;
-    color: #666;
-    margin-top: 20px;
-}
-
-.agradecimento {
-    text-align: center;
-}
-
-.botao-voltar {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 25px;
-    background-color: #a22;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
+@media (max-width:480px){
+  .escala label{width:34px;height:34px;font-size:0.9rem}
 }
