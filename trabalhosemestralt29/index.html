@@ -4,70 +4,294 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <title>Trattoria Bella Itália - Rio do Sul</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1 class="logo">Trattoria Bella Itália - Rio do Sul</h1>
-            <nav>
-                <div class="menu-icon">&#9776;</div>
-                <ul class="nav-list">
-                    <li>Home</li>
-                    <li>Sobre</li>
-                    <li>Cardápio</li>
-                    <li><a href="public/index.php">Deixe Sua Opinião</a></li>
-                </ul>
-            </nav>
+    <div class="top-header">
+        <div class="top-nav">
+            <p>Horário de Funcionamento: Segunda a Domingo — 18h às 21h</p>
         </div>
-    </header>
-    <!-----Hero Section----->
-    <section class="hero">
-        <div class="hero-section">
-            <h2>Bem-vindo(a)! É um prazer ter você aqui — aproveite e avalie sua experiência conosco!</h2>
-            <p>Encontre receitas irresistíveis para matar sua vontade de saborear algo delicioso.</p>
+    </div>
 
-            <form action="#" class="search-box">
-                <input type="text" placeholder="Pesquisar pratos...">
-                <button type="submit">Buscar</button>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="imagens/logo2.png" alt="">
+            </div>
+
+            <div class="nav-items">
+                <ul>
+                    <li><a href="#">HOME</a></li> 
+                    <li><a href="#about">SOBRE</a></li>
+                    <li><a href="#menu-section">CARDÁPIO</a></li> 
+                    <li><a href="#blog">BLOG</a></li> 
+                    <li><a href="#contact">RESERVAS</a></li> 
+                     <li><a href="public/index.php">DEIXE SUA OPINIÃO</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--.......................Hero Section......................-->
+    <div class="hero">
+        <div class="hero-top-video" src="" style="width: 100%;">
+            <video autoplay loop muted id="video">
+                <source src="imagens/video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="content_wrapper">
+            <h1>Bem-vindo à Trattoria Bella Itália</h1>
+            <h2>Venha saborear nossos pratos deliciosos e preparados com cuidado na nossa<span> 'Rasoi'</span></h2>
+            <div class="book-table">
+                <a href="#contact">Reservar Mesa</a>
+            </div>
+        </div>
+    </div>
+
+    <!--.......................About Section......................-->
+
+    <div id="about">
+        <div class="container">
+            <div class="about-left">
+                <h3>Tradição</h3>
+                <h1>Nossa História</h1>
+                <p>Na Trattoria Bella Itália, combinamos tradição e sabor para oferecer uma experiência
+                   gastronômica inesquecível. Cada prato é preparado com ingredientes selecionados e
+                   muito cuidado, para que você sinta o verdadeiro gosto da culinária italiana.</p>
+                
+                 <br>
+
+                 <p>Nosso compromisso é proporcionar qualidade, conforto e atendimento impecável. Seja
+                    para um almoço especial, um jantar romântico ou uma celebração entre amigos, estamos
+                    sempre prontos para receber você com o melhor da nossa casa.</p>
+
+                 <button>Saiba Mais Sobre Nós</button>
+            </div>
+            <div class="about-right">
+            <img src="imagens/img7.png" alt="">   
+            </div>
+        </div>
+    </div>
+     <!--.......................Menu Section......................-->
+
+     <div id="menu-section">
+        <div class="container">
+            <h2 class="heading">Delícias Da Casa</h2>
+
+            <div class="row">
+                <div class="menu-card">
+                    <div class="menu-img">
+                        <img src="imagens/img1.jpg" alt="">
+                    </div>
+                    <div class="menu-text">
+                        <h4>Carbonara — Bella Itália</h4>
+                        <p>Clássico cremoso</p>
+                        <p class="price">&#36 30</p>
+
+                        <p class="btn"> <a href="">Selecionar</a></p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-img">
+                        <img src="imagens/img2.jpg" alt="">
+                    </div>
+                    <div class="menu-text">
+                        <h4>Lasagna — Molho Branco</h4>
+                        <p>Camadas cremosas</p>
+                        <p class="price">&#36 30</p>
+
+                        <p class="btn"> <a href="">Selecionar</a></p>
+                    </div>
+                </div>
+                <div class="menu-card row-reverse">
+                    <div class="menu-img">
+                        <img src="imagens/img5.jpg" alt="">
+                    </div>
+                    <div class="menu-text">
+                        <h4>Ravioli — Quatro Queijos</h4>
+                        <p>Tradicional leve</p>
+                        <p class="price">&#36 30</p>
+
+                        <p class="btn"> <a href="">Selecionar</a></p>
+                    </div>
+                </div>
+                <div class="menu-card row-reverse">
+                    <div class="menu-img">
+                        <img src="imagens/img4.jpg" alt="">
+                    </div>
+                    <div class="menu-text">
+                        <h4>Parmegiana — À Milanesa</h4>
+                        <p>Crocante & suculento</p>
+                        <p class="price">&#36 30</p>
+
+                        <p class="btn"> <a href="">Selecionar</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!--.......................Blog Section......................-->
+<div id="blog">
+    <div class="container">
+        <h2 class="heading">Italian Insights</h2>
+
+        <div class="row">
+            <div class="col">
+                <img src="imagens/img11.jpg" alt="">
+                <div>
+                    <a href="">Novembro 15, 2025</a>
+                    <a href="">Admin</a>
+                </div>
+
+                <h3 class="tiltle">Culinária que Inspira</h3>
+
+                <p><a href="">Ler Mais</a></p>
+            </div>
+            <div class="col">
+                <img src="imagens/img8.jpg" alt="">
+                <div>
+                    <a href="">Novembro 15, 2025</a>
+                    <a href="">Admin</a>
+                </div>
+
+                <h3 class="tiltle">Sabor que Encanta</h3>
+
+                <p><a href="">Ler Mais</a></p>
+            </div>
+            <div class="col">
+                <img src="imagens/img9.jpg" alt="">
+                <div>
+                    <a href="">Novembro 15, 2025</a>
+                    <a href="">Admin</a>
+                </div>
+
+                <h3 class="tiltle">O Melhor da Itália</h3>
+
+                <p><a href="">Ler Mais</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--.......................Contact Section......................-->
+<div id="contact">
+    <div class="container">
+        <div class="contact-form">
+            <h3>Entre em Contato</h3>
+
+            <form action="">
+                <div>
+                    <label for="name">Nome</label>
+                    <input type="text" placeholder="Digite seu nome">
+                </div>
+                <div>
+                    <label for="Email">E-mail</label>
+                    <input type="email" placeholder="Digite seu e-mail">
+                </div>
+                <div>
+                    <label for="phone">Telefone</label>
+                    <input type="tel" placeholder="Digite seu telefone">
+                </div>
+                <div>
+                    <label for="date">Data</label>
+                    <input type="date">
+                </div>
+                <div>
+                    <label for="time">Horário</label>
+                    <input type="time">
+                </div>
+                <div>
+                    <label for="people">Nº de Pessoas</label>
+                    <input type="number" placeholder="Informe a quantidade de pessoas">
+                </div>
+
+                <button>Reservar Mesa</button>
             </form>
         </div>
-    </section>
-    <!-----Recipe Section----->
-    <section class="recipes">
-        <h2>Pratos em Destaques</h2>
-        <div class="recipe-section">
-            <divi class="recipe-card">
-                <img src="imagens/img1.jpg" alt="">
-                <h1>Clássico Italiano</h1>
-                <p>Uma receita clássica e irresistível, com molho de tomate encorpado e queijo derretido que conquistam qualquer paladar.</p>
-                <a href="#">Ver Prato</a>
-            </divi>
-            <divi class="recipe-card">
-                <img src="imagens/img2.jpg" alt="">
-                <h2>Bella Napoli</h2>
-                <p>Um clássico italiano com molho de tomate fresco e queijo derretido, trazendo o sabor autêntico das cantinas napolitanas.</p>
-                <a href="#">Ver Prato</a>
-            </divi>
-            <divi class="recipe-card">
-                <img src="imagens/img3.jpg" alt="">
-                <h2>Encanto Italiano</h2>
-                <p>Molho de tomate suave e queijo gratinado se unem em uma receita simples, mas cheia de sabor e tradição.</p>
-                <a href="#">Ver Prato</a>
-            </divi>
-            <divi class="recipe-card">
-                <img src="imagens/img4.jpg" alt="">
-                <h2>Delícia da Trattoria</h2>
-                <p>Uma explosão de sabores com o equilíbrio perfeito entre o tomate fresco, ervas finas e o toque irresistível do queijo derretido.</p>
-                <a href="#">Ver Prato</a>
-            </divi>
-        </div>
-    </section>
+    </div>
+</div>
 
-    <footer>
-        <div>
-            <p>&copy; 2025 Trattoria Bella Itália</p>
+    <!--.......................Footer Section......................-->
+<div id="footer">
+    <div class="container">
+       <!--<div class="top-footer">
+            <img src="imagens/logo2.png" alt="">
+        </div>-->
+
+        <div class="footer-link">
+            <div class="column">
+                <div>CONTATOS</div>
+            <ul class="col-link">
+                <li><a href=""><strong>Telefone:</strong> +55 47 3521-1880</a>
+                </li>
+                <br>
+                <li><a href=""><strong>E-mail</strong> trattoriabellaitalia.rs@gmail.com</a></li>
+                <br>
+                <li>
+                    <a href="">
+                    <strong>Horário de Atendimento:</strong><br>
+                    <br>
+                    Segunda a Sexta: 18h00 às 23h00<br>
+                    Sábados: 18h00 às 23h30<br>
+                    Domingos e Feriados: 18h00 às 22h00
+                    </a>
+                </li>
+                <br>
+                <li><a href="https://www.google.com/maps/search/?api=1&query=Rua+das+Palmeiras,+482,+Rio+do+Sul,+SC" target="_blank">
+                    <strong>Endereço: </strong> Rua das Palmeiras, 482 – Centro
+                    </a>
+                </li>
+            </ul>    
+            </div>
+            <div class="column">
+                <div>NOSSA HISTÓRIA</div>
+            <ul class="col-link">
+                <li><a href="">Quem Somos</a></li>
+                <li><a href="">Nosso Chef</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Cardápio</a></li>
+                <li><a href="">Eventos</a></li>
+            </ul>    
+            </div>
+            <div class="column">
+                <div>A TRATTORIA BELLA ITÁLIA</div>
+            <ul class="col-link">
+                <li><a href="">Pratos</a></li>
+                <li><a href="">Vinhos & Harmonização</a></li>
+                <li><a href="">Prêmios & Reconhecimentos</a></li>
+                <li><a href="">Chef’s Specials</a></li>
+                <li><a href="">Cozinha Artesanal</a></li>
+            </ul>    
+            </div>
+            <div class="column">
+                <div>SOCIAL LINKS</div>
+            <ul class="col-link">
+                <a href=""><i class="fa-brands fa-facebook" style="color: #1c70b0;"></i></a>
+                <a href=""><i class="fa-brands fa-instagram" style="color: #d016a7;"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok" style="color: #0f0f10;"></i></a>
+                <a href=""><i class="fa-brands fa-whatsapp" style="color: #48db1f;"></i></a>
+
+                <div class="newlestter">
+                    <input type="text" placeholder="Digite seu e-mail">
+
+                    <div>
+                        <button>ASSINAR</button>
+                    </div>
+                </div>
+
+            </ul>    
+            </div>
         </div>
-    </footer>
+    </div>
+
+    <br>
+    <div class="footer-bottom">
+        <p>Trattoria Bella Itália &copy; 2025 | Rio do Sul</p>
+    </div>
+</div>
+ 
+    <script>
+        document.getElementoById('video').playbackRate = 0.25
+    </script>
 </body>
 </html>
