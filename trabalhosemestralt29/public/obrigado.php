@@ -10,7 +10,9 @@
         <h2>Obrigado!</h2>
         <p>O Estabelecimento agradece sua resposta e ela é muito importante para nós,<br>
         pois nos ajuda a melhorar continuamente nossos serviços.</p>
-        <a href="index.php" class="botao-voltar">Fazer nova avaliação</a>
+    <p>
+        <a href="/programacao-web-i/trabalhosemestralt29/index.html" class="botao-voltar"><strong>Voltar à tela inicial</strong></a>
+    </p>
     </div>
 </body>
 </html>

@@ -20,6 +20,10 @@ $perguntas = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <p class="descricao">Avalie nossa experiência e ajude-nos a melhorar!</p>
 
         <form id="form-avaliacao" action="../src/respostas.php" method="post" novalidate>
+
+            <input type="hidden" name="setor_id" value="1">
+            <input type="hidden" name="dispositivo_id" value="1">
+
             <?php foreach($perguntas as $index => $p): ?>
                 <div class="pergunta <?= $index === 0 ? 'ativa' : '' ?>" data-index="<?= $index ?>">
                     <span class="texto-pergunta"><?= htmlspecialchars($p['texto_pergunta']) ?></span>
@@ -33,7 +37,6 @@ $perguntas = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                 value="<?= $i ?>" 
                                 required
                             >
-                            <!-- adicionamos data-value para colorir via CSS -->
                             <label for="p<?= $p['id_pergunta'] ?>_<?= $i ?>" data-value="<?= $i ?>"><?= $i ?></label>
                         <?php endfor; ?>
                     </div>
@@ -48,7 +51,7 @@ $perguntas = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </form>
 
         <p class="anonimo">
-            Sua avaliação é <strong>anônima</strong>. Nenhuma informação pessoal é solicitada.
+            Sua avaliação espontânea é <strong>anônima</strong>, nenhuma informação pessoal é solicitada ou armazenada.
         </p>
     </div>
 </body>

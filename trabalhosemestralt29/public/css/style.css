@@ -106,3 +106,32 @@ textarea:focus{outline:none;border-color:#d32f2f}
 @media (max-width:480px){
   .escala label{width:34px;height:34px;font-size:0.9rem}
 }
+
+/*Estilo Painel administrador*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+  background-color: #73b4ff;
+  padding: 28px 0;
+}
+/*Botão voltar*/
+.botao-voltar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #567507;
+    color: #fff;
+    text-decoration: none; /* remove sublinhado */
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.botao-voltar:hover {
+    background-color: #2b4a01;
+}

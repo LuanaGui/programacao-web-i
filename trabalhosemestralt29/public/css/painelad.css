@@ -1,0 +1,230 @@
+/* CSS do arquivo painel.php */
+.painel-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', 'Arial', sans-serif; /* padronizando fonte */
+}
+
+/* Lista de perguntas */
+.lista-perguntas {
+    list-style: none;
+    margin-top: 20px;
+    padding-left: 0;
+}
+
+.lista-perguntas li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e8f5e9;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Texto da pergunta */
+.lista-perguntas li .texto-pergunta {
+    flex: 1; /* ocupa o máximo possível à esquerda */
+    font-size: 16px;
+}
+
+/* Botões à direita */
+.lista-perguntas li .botoes-pergunta {
+    display: flex;
+    gap: 10px;
+}
+
+/* Botões editar/remover */
+.btn-editar, .btn-remover {
+    padding: 8px 18px;
+    border-radius: 6px;
+    border: none;
+    text-decoration: none;
+    color: white;
+    font-family: inherit; /* mesma fonte do painel */
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-editar {
+    background-color: #4CAF50;
+}
+
+.btn-editar:hover {
+    background-color: #45a049;
+}
+
+.btn-remover {
+    background-color: #f44336;
+}
+
+.btn-remover:hover {
+    background-color: #e53935;
+}
+
+/* Edição / Cadastro */
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #e8f5e9;
+}
+
+/* Botões*/
+.btn-enviar, .btn-cancelar {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-enviar {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-enviar:hover {
+    background-color: #45a049;
+}
+
+.btn-cancelar {
+    background-color: #4CAF50;
+    color: white;
+    margin-left: 10px;
+}
+
+.btn-cancelar:hover {
+    background-color: #45a049;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* Mensagem de status no canto inferior direito */
+.mensagem-status {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-family: inherit;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    z-index: 1000;
+    opacity: 0;
+    animation: mostrarMensagem 1.3s forwards;
+}
+
+/* Animação da mensagem */
+@keyframes mostrarMensagem {
+    0% { opacity: 0; transform: translateY(20px); }
+    10% { opacity: 1; transform: translateY(0); }
+    80% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(20px); }
+}
+
+.lista-perguntas li a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #2e7d32; /* <- isso sobrepõe o color: white */
+    font-weight: 600;
+}
+.btn-editar, .btn-remover {
+    color: white !important;
+}
+
+/*  CSS do arquivo edicao.php */
+.painel-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #e6f5ea;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.titulo {
+    text-align: center;
+    font-family: 'Segoe UI', 'Arial', sans-serif; 
+    color: #2f6f4e;
+    margin-bottom: 30px;
+}
+form input[type="text"], form textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background-color: #ffffff; 
+}
+/*Botões*/
+.btn-enviar, .btn-cancelar {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: all 0.2s ease;
+}
+/* Botão atualizar */
+.btn-enviar {
+    background-color: #4CAF50; 
+}
+.btn-enviar:hover {
+    background-color: #45a049;
+}
+
+/* Botão cancelar */
+.btn-cancelar {
+    background-color: #3e5f3f; 
+    color: white;
+}
+
+.btn-cancelar:hover {
+    background-color: #436853;
+}
+
+.descricao-login {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #2f6f4e;
+}
+
+.lista-perguntas li {
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.lista-perguntas li a {
+    margin-left: 15px;
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.lista-perguntas li a:hover {
+    text-decoration: underline;
+}

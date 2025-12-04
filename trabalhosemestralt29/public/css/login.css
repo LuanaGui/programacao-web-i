@@ -1,0 +1,191 @@
+/* Garante que padding e borda estejam inclusos na largura */
+.container-login input[type="text"],
+.container-login input[type="password"],
+.container-login .btn-enviar {
+    box-sizing: border-box;
+}
+
+/* Inputs e botão do mesmo tamanho */
+.container-login input[type="text"],
+.container-login input[type="password"],
+.container-login .btn-enviar {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+/* --- Tela de login --- */
+.container-login {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 28px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+    text-align: center;
+    margin: 60px auto;
+}
+
+.container-login .titulo {
+    color: #d32f2f;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.container-login input[type="text"],
+.container-login input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    border: 1px solid #dcdcdc;
+    font-size: 1rem;
+}
+
+.container-login input:focus {
+    outline: none;
+    border-color: #d32f2f;
+}
+
+.container-login .btn-enviar {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 0;
+    background: #d32f2f;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container-login .btn-enviar:hover {
+    background: #b71c1c;
+}
+
+.container-login p.erro {
+    color: red;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+/* --- Fundo com degradê verde --- */
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #a8e6cf, #56ab2f); /* degradê verde suave → forte */
+}
+
+/* Container centralizado */
+.container-login {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 28px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Título */
+.container-login .titulo {
+    color: #2e7d32; /* verde escuro */
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+.container-login input[type="text"],
+.container-login input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    border: 1px solid #dcdcdc;
+    font-size: 1rem;
+}
+
+.container-login input:focus {
+    outline: none;
+    border-color: #2e7d32;
+    box-shadow: 0 0 5px rgba(46,125,50,0.5);
+}
+
+/* Botão Entrar */
+.container-login .btn-enviar {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 0;
+    background: #56ab2f; /* verde principal */
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.container-login .btn-enviar:hover {
+    background: #2e7d32; /* verde mais escuro no hover */
+}
+
+/* Mensagem de erro */
+.container-login p.erro {
+    color: red;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+/* Responsividade */
+@media (max-width:480px){
+    .container-login { padding: 20px; }
+    .container-login .titulo { font-size: 1.6rem; }
+}
+/* Descrição abaixo do título */
+.container-login .descricao-login {
+    color: #388e3c; /* verde médio */
+    font-size: 1.1rem;  /* um pouco maior */
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+/* Caixa de alerta animada */
+#alerta-login {
+    display: none;               /* começa escondido */
+    background-color: #f8d7da;   /* vermelho claro */
+    color: #721c24;              /* texto vermelho escuro */
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    animation: shake 0.3s ease;  /* animação de shake */
+    text-align: center;
+}
+
+/* animação shake */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-6px); }
+    50% { transform: translateX(6px); }
+    75% { transform: translateX(-6px); }
+    100% { transform: translateX(0); }
+}
+/* Inputs do login */
+.container-login input[type="text"],
+.container-login input[type="password"] {
+    width: 100%;          /* mesma largura do botão */
+    padding: 12px;        /* mesmo padding */
+    margin-bottom: 16px;
+    border-radius: 10px;  /* mesma borda arredondada do botão */
+    border: 1px solid #dcdcdc;
+    font-size: 1rem;
+}
+
+/* Mantém efeito ao focar */
+.container-login input:focus {
+    outline: none;
+    border-color: #2e7d32;
+    box-shadow: 0 0 5px rgba(46,125,50,0.5);
+}
