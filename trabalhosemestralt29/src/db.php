@@ -2,6 +2,7 @@
 $config = include __DIR__ . '/../config.php';
 $dbConfig = $config['db'];
 
+// Define variáveis de conexão
 $host = $dbConfig['host'];
 $port = $dbConfig['port'];
 $dbname = $dbConfig['dbname'];

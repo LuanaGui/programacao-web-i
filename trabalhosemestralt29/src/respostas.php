@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Verifica se a pergunta existe e está ativa
              $stmt = $pdo->prepare("SELECT COUNT(*) FROM perguntas WHERE id_pergunta = :id AND status = TRUE");
             $stmt->execute(['id' => $id_pergunta]);
-            if ($stmt->fetchColumn() == 0) continue; // pula se não existe
+            if ($stmt->fetchColumn() == 0) continue;
 
             // Insere a avaliação
             $stmt = $pdo->prepare("INSERT INTO avaliacoes 

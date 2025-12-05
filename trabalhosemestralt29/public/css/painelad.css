@@ -28,7 +28,7 @@
 
 /* Texto da pergunta */
 .lista-perguntas li .texto-pergunta {
-    flex: 1; /* ocupa o máximo possível à esquerda */
+    flex: 1;
     font-size: 16px;
 }
 
@@ -45,7 +45,7 @@
     border: none;
     text-decoration: none;
     color: white;
-    font-family: inherit; /* mesma fonte do painel */
+    font-family: inherit;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.2s ease;
@@ -143,7 +143,7 @@ h2 {
 .lista-perguntas li a {
     margin-left: 10px;
     text-decoration: none;
-    color: #2e7d32; /* <- isso sobrepõe o color: white */
+    color: #2e7d32;
     font-weight: 600;
 }
 .btn-editar, .btn-remover {

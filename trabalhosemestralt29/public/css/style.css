@@ -1,7 +1,6 @@
 /* reset */
 *{box-sizing:border-box;margin:0;padding:0;font-family: "Poppins", sans-serif}
 
-/* página inteira centralizada (tablet-friendly) */
 html,body{height:100%}
 body{
   background:#fafafa;
@@ -11,10 +10,9 @@ body{
   padding:20px;
 }
 
-/* container central (limpo e compatível com tablet) */
 .container{
   width:100%;
-  max-width:720px; /* tablet-friendly */
+  max-width:720px;
   background:#fff;
   padding:28px;
   border-radius:14px;
@@ -40,10 +38,8 @@ body{
   margin-top:6px;
 }
 
-/* escondemos o input nativo */
 .escala input[type="radio"]{display:none}
 
-/* label visual da escala (usamos data-value para colorir) */
 .escala label{
   width:44px;
   height:44px;
@@ -58,7 +54,6 @@ body{
   user-select:none;
 }
 
-/* cores exatas por valor (do vermelho ao verde) */
 .escala label[data-value="0"]  { background:#d73027; }
 .escala label[data-value="1"]  { background:#e24626; }
 .escala label[data-value="2"]  { background:#f46d43; }
@@ -71,17 +66,14 @@ body{
 .escala label[data-value="9"]  { background:#1a9850; }
 .escala label[data-value="10"] { background:#006837; }
 
-/* efeito quando selecionado: usamos selector input:checked + label */
 .escala input[type="radio"]:checked + label{
   transform:scale(1.08);
   box-shadow:0 6px 18px rgba(0,0,0,0.12);
   outline:3px solid rgba(0,0,0,0.06);
 }
 
-/* hover leve */
 .escala label:hover{filter:brightness(1.03); transform:translateY(-2px) scale(1.03)}
 
-/* textarea e botão */
 textarea{
   width:100%;height:110px;padding:10px;border-radius:10px;border:1px solid #dcdcdc;margin-top:12px;font-size:1rem;resize:none
 }
@@ -98,7 +90,6 @@ textarea:focus{outline:none;border-color:#d32f2f}
 /* animação */
 @keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
 
-/* responsividade para tablets e celulares */
 @media (max-width:900px){
   .container{padding:20px}
   .escala label{width:40px;height:40px;font-size:0.95rem}
@@ -125,7 +116,7 @@ header{
     padding: 10px 20px;
     background-color: #567507;
     color: #fff;
-    text-decoration: none; /* remove sublinhado */
+    text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
     margin-top: 20px;

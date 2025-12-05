@@ -1,3 +1,4 @@
+<!-- Página de agradecimento exibida após o envio da avaliação -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>

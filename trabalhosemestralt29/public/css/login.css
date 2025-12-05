@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/* Inputs e botão do mesmo tamanho */
+/* Inputs e botão todos do mesmo tamanho */
 .container-login input[type="text"],
 .container-login input[type="password"],
 .container-login .btn-enviar {

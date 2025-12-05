@@ -18,6 +18,7 @@ function login($login, $senha){
             return true;
         }
     }
+    // Caso o login não exista ou a senha esteja incorreta, retorna false
     return false;
 }
 

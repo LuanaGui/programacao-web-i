@@ -26,5 +26,6 @@ function removerPergunta($id){
     $pdo = conectarBD();
     $sql = "DELETE FROM perguntas WHERE id = :id";
     $stmt = $pdo->prepare($sql);
+
     return $stmt->execute(['id' => $id]);
 }

@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/../src/db.php';
 
-// Busca perguntas ativas
+// Busca as perguntas ativas
 $stmt = $pdo->query("SELECT * FROM perguntas WHERE status = TRUE ORDER BY id_pergunta");
 $perguntas = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>

@@ -32,7 +32,7 @@ if (isset($_GET['remover'])) {
     exit;
 }
 
-// Exibir mensagens de acordo com a ção utilizada
+// Exibir mensagens de acordo com ação utilizada
 if (isset($_GET['mensagem'])) {
     switch ($_GET['mensagem']) {
         case 1: $mensagem = "Pergunta cadastrada com sucesso!"; break;

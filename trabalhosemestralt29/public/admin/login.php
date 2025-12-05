@@ -63,7 +63,7 @@ form.addEventListener('submit', function(e) {
     const senha = form.senha.value.trim();
 
     if (!usuario || !senha) {
-        e.preventDefault(); // impede envio do formulário
+        e.preventDefault(); // Impede envio do formulário
         alerta.textContent = "Por favor, preencha usuário e senha!";
         alerta.style.display = "block";
 

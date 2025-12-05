@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Efeito de animação da página
+    // Efeito animação da página
     const myObserver = new IntersectionObserver((entries) => {
         entries.forEach( (entry) => {
             if(entry.isIntersecting){

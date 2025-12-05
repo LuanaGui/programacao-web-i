@@ -75,7 +75,7 @@ CREATE TABLE admin (
     senha VARCHAR(255) NOT NULL
 );
 
--- Usuário Teste (senha = admin123)
+-- Usuário para Teste (senha = admin123)
 INSERT INTO admin (usuario, senha)
 VALUES ('admin', crypt('admin123', gen_salt('bf')));
 

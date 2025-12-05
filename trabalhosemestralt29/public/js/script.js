@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Acessibilidade: avançar com teclado (Enter/Espaço)
+  // Acessibilidade: avançar com teclado Enter/Espaço
   document.querySelectorAll('.escala label').forEach(lbl => {
     lbl.setAttribute('tabindex', '0');
     lbl.addEventListener('keydown', e => {

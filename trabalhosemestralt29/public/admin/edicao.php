@@ -58,7 +58,7 @@ if (isset($_POST['atualizar'])) {
         <p class="descricao-login"><?= htmlspecialchars($mensagem) ?></p>
     <?php endif; ?>
 
-    <!-- Formulário de edição -->
+    <!-- Edição de Perguntas -->
     <form action="" method="post">
         <input type="text" name="texto_pergunta" value="<?= htmlspecialchars($pergunta['texto_pergunta']) ?>" required>
         <button type="submit" name="atualizar" class="btn-enviar">Atualizar Pergunta</button>
