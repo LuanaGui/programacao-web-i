@@ -1,0 +1,159 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Títulos */
+h1, h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Container do formulário */
+.form-container {
+    max-width: 450px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Inputs e selects */
+input, select {
+    width: 100%;
+    box-sizing: border-box; 
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    appearance: none;        
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+/* Botão */
+button, input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #0078ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #005fcc;
+}
+
+/* Tabela */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #0078ff;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Links */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #0078ff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+select {
+    background: #fff url('data:image/svg+xml;utf8,<svg fill="%230078ff" height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 10px center;
+    padding-right: 35px;
+}
+
+/* Caixa de mensagem */
+.msg-box {
+    max-width: 450px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* Texto de sucesso */
+.msg-sucesso {
+    font-size: 18px;
+    color: #008f27;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Botões de link */
+.msg-box a {
+    display: block;
+    background: #0078ff;
+    color: #fff;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 12px;
+    transition: 0.2s;
+}
+
+.msg-box a:hover {
+    background: #005fcc;
+}
+
+.btn-voltar {
+    display: block;
+    width: 220px;
+    margin: 25px auto;
+    background: #0078ff;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;        
+    text-decoration: none;  
+    border: none;
+    transition: 0.2s;
+}
+
+.btn-voltar:hover {
+    background: #005fcc;
+    transform: scale(1.02); 
+}

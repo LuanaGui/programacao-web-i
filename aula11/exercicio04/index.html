@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Pessoas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2>CADASTRO DE PESSOAS</h2>
+
+<div class="form-container">
+    <form action="inserir_pessoa.php" method="POST">
+
+        <label>Nome:</label>
+        <input type="text" name="nome" required>
+
+        <label>Sobrenome:</label>
+        <input type="text" name="sobrenome">
+
+        <label>Email:</label>
+        <input type="email" name="email">
+
+        <label>Senha:</label>
+        <input type="password" name="senha">
+
+        <label>Cidade:</label>
+        <input type="text" name="cidade">
+
+        <label>Estado:</label>
+        <select name="estado">
+            <option value="">Selecione</option>
+            <option value="SC">SC</option>
+            <option value="PR">PR</option>
+            <option value="RS">RS</option>
+            <option value="SP">SP</option>
+            <option value="RJ">RJ</option>
+        </select>
+
+        <input type="submit" value="Salvar">
+    </form>
+</div>
+
+</body>
+</html>
